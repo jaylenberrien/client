@@ -1,26 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+// import { Fade } from 'react-reveal';
+
+import './index.css';
+import { Home } from './pages/Home';
+import Nav from './components/Nav';
+// import Footer from './components/Footer';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import EmailBar from './components/EmailBar';
+import SocialBar from './components/SocialBar';
 
 function App() {
+
+  document.addEventListener('DOMContentLoaded', function(){
+    const container:any = document.getElementById('C-background-effect');
+    const cursorHighlight:any = container.querySelector('::before');
+    document.addEventListener('mousemove', function(e){
+      cursorHighlight.style.top = e.clientY + 'px';
+      cursorHighlight.style.top = e.clientX + 'px';
+    })
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-blue-950 text-white scroll-smooth' >
+      <Nav />
+        <SocialBar />
+        <EmailBar/>
+        <div className='p-10'>
+          <Home />
+          <About />
+          <Projects/>
+          <Contact/>           
+        </div>            
     </div>
   );
 }
 
 export default App;
+
+

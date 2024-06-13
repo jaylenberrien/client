@@ -1,8 +1,8 @@
 Visit site at https://jaylenberrien.netlify.app/
 
-**More will be Added to Read Me soon!!
+**More will be Added to Read Me soon!!**
 
-<u>Planned Updates</u>
+<u> Planned Updates </u>
 
 * Will add more projects as they are finished (Naturally lol)
 * Will adjust the layout and styling to get rid of empty space

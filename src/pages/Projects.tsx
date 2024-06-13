@@ -30,7 +30,7 @@ export default function Projects () {
           <div className='inline-block mr-5'>
             <h3 className='text-cyan-300 text-sm'>Top Project</h3>
             <p className='font-bold text-xl'>Wordle Game</p>
-            <div>{!isLoading && (<Blurhash hash='L3P%O.?b~q%M00xu00s:00D%M{Ri' width='100' height="100" resolutionX={32} resolutionY={32} punch={1} />)} { true && (<img src={imgWW} className='preview-size'/>)}</div>
+            <div>{!isLoading && (<Blurhash hash='L3P%O.?b~q%M00xu00s:00D%M{Ri' width='100' height="100" resolutionX={32} resolutionY={32} punch={1} />)} { true && (<img src={imgWW} className='preview-size' alt='Wordle Game'/>)}</div>
           </div>
           <div className='inline-block my-12 text-lg'>
             <p className='w-4/6'>This is my version of the game wordle. I made this a while ago when I was still in my SWE Program. It involved heavy use of the DOM. The main difficulty was the logic of win and lose conditions. </p>

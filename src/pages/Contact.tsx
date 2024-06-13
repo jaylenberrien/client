@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Contact: React.FC = () => {
   const copyEmail =  function(){
-    const copiedEmail = navigator.clipboard.writeText('jaylenberrien.jb@gmail.com')
+    navigator.clipboard.writeText('jaylenberrien.jb@gmail.com')
     alert('email copied')        
   }
   return (
